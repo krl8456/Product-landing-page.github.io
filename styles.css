@@ -1,0 +1,152 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+:root {
+    --black: #000000;
+    --light-orange: rgb(255, 217, 0);
+    --orange: rgb(245, 185, 75);
+    --light-gray: rgb(216, 213, 213);
+    --very-light-gray: rgb(245, 245, 245);
+}
+html, body, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--very-light-gray);
+}
+body {
+    margin-top: 7em;
+    background-color: var(--very-light-gray);
+    font-size: clamp(0.2em, 1.2vw, 1.5em);
+    font-family: Lato;
+}
+#header-img {
+    margin: 2% 0 0 3%;
+    width: 20em;
+    height: auto
+}
+nav {
+    background-color: var(--very-light-gray);
+    width: 100%;
+    padding-bottom: 2.5em;
+}
+.links {
+    margin-left: 60%;
+    margin-top: -2%;
+}
+.nav-link, .footer-link {
+    margin-right: 7vw;
+    color: var(--black);
+    text-decoration: none;
+}
+#main-header {
+    margin-top: 2em;
+    font-size: 0.8em;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 1em;
+}
+input {
+    font-size: clamp(0.7em, 3vw, 1.3em);
+    width: clamp(8em, 30vw, 25em);
+    height: 2em;
+}
+input[type="submit"] {
+    display: block;
+    margin: 1em auto;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 10em;
+    text-align: right;
+    background-color: var(--light-orange);
+    border: 0;
+    height: 2em;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    -webkit-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    transition: background-color 700ms linear;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    width: 50em;
+}
+.image {
+    width: clamp(2em, 5vw, 20em);
+    height: auto;
+    margin-right: 10vw;
+}
+section {
+    display: flex;
+    margin-bottom: 3em;
+}
+p {
+    word-wrap: break-word;
+}
+#video {
+    width: 50vw;
+    height: 30vw;
+}
+#trombones {
+    display: flex;
+    text-align: center;
+    gap: 3vw;
+    margin-block: 3em;
+    box-sizing: border-box;
+}
+.sub-trombone {
+    border: 1px solid black;
+}
+.sub-header {
+    background-color: var(--light-gray);
+    padding: 1em 4em;
+}
+h3 {
+    white-space: nowrap;
+}
+.price {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+button {
+    width: 40%;
+    height: 3em;
+    font-size: 80%;
+    background-color: var(--orange);
+    border: 0;
+    margin-bottom: 1em;
+}
+footer {
+    width: 75%;
+    background-color: var(--light-gray);
+    text-align: right;
+    margin-inline: auto;
+    padding: 1em;
+}
+.footer-link {
+    margin-right: 2em;
+}
+#copyright {
+    margin-right: 1em;
+    margin-bottom: 0;
+}
+@media (max-width: 559px) {
+    #trombones {
+        flex-direction: column;
+    }
+    .sub-header {
+        padding: 1em 10em;
+    }
+}
